@@ -1,25 +1,46 @@
-*.class
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Package Files #
-*.jar
-*.war
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
 
-# gwt caches and compiled units #
-war/gwt_bree/
-gwt-unitCache/
+# dependencies
+/node_modules
 
-# boilerplate generated classes #
-.apt_generated/
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
 
-# more caches and things from deploy #
-war/WEB-INF/deploy/
-war/WEB-INF/classes/
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-#compilation logs
-.gwt/
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 
-#gwt junit compilation files
-www-test/
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
 
-#old GWT (1.5) created this dir
-.gwt-tmp/
+# System Files
+.DS_Store
+Thumbs.db
